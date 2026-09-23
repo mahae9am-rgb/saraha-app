@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "f0f4ab75-dde0-4d4b-9a9d-c2275c9cf7ae",
+    "name": "app -saraha",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57079027",
+    "_collection_link": "https://go.postman.co/collection/57079027-f0f4ab75-dde0-4d4b-9a9d-c2275c9cf7ae?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"maha\",\r\n  \"email\": \"mahaa@example.com\",\r\n  \"password\": \"456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9700/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9700",
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update user",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"mahaa@example.com\",\r\n  \"code\": \"482218\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9700/auth/verifiy-account",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9700",
+          "path": [
+            "auth",
+            "verifiy-account"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"mahaa@example.com\",\r\n  \"password\": \"456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9700/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9700",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "send otp",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"mahaa@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9700/auth/send-otp",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9700",
+          "path": [
+            "auth",
+            "send-otp"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
